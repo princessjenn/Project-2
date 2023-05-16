@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Buddy",
+    "breed": "Labrador Retriever",
+    "age": "3",
+    "sex": "Male",
+    "vaccinations": "Up to date",
+    "date_arrived": "2022-08-10"
+  },
+  {
+    "name": "Luna",
+    "breed": "German Shepherd",
+    "age": "2",
+    "sex": "Female",
+    "vaccinations": "Incomplete",
+    "date_arrived": "2023-01-05"
+  },
+  {
+    "name": "Max",
+    "breed": "Golden Retriever",
+    "age": "5",
+    "sex": "Male",
+    "vaccinations": "Up to date",
+    "date_arrived": "2022-11-20"
+  },
+  {
+    "name": "Bella",
+    "breed": "Poodle",
+    "age": "4",
+    "sex": "Female",
+    "vaccinations": "Up to date",
+    "date_arrived": "2023-03-12"
+  },
+  {
+    "name": "Rocky",
+    "breed": "Boxer",
+    "age": "6",
+    "sex": "Male",
+    "vaccinations": "Up to date",
+    "date_arrived": "2022-12-05"
+  }
+]
