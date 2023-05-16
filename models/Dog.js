@@ -28,17 +28,16 @@ Dog.init(
       type: DataTypes.STRING,
     },
     date_arrived: {
-      type: DataTypes.DATE,
+      type: DataTypes.STRING,
       allowNull: false,
-      defaultValue: DataTypes.NOW,
     },
-    // user_id: {
-    //   type: DataTypes.INTEGER,
-    //   references: {
-    //     model: 'user',
-    //     key: 'id',
-    //   },
-    // },
+    spay_neuter: {
+       type: DataTypes.BOOLEAN,
+       references: {
+         model: 'dogs',
+         key: 'id',
+       },
+     },
   },
   {
     sequelize,
