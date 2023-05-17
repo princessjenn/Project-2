@@ -2,6 +2,10 @@ const router = require('express').Router();
 const { Dog } = require('../../models');
 const withAuth = require('../../utils/auth');
 
+
+
+
+
 router.post('/', withAuth, async (req, res) => {
   try {
     const newDog = await Dog.create({
