@@ -56,4 +56,4 @@ SpayNeuter.belongsTo(Dog, {
 
 
 
-module.exports = { User, Dog, Adoption, Vaccination };
+module.exports = { User, Dog, Adoption, Vaccination, SpayNeuter };
