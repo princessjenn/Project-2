@@ -32,12 +32,15 @@ Dog.init(
       allowNull: false,
     },
     spay_neuter: {
-       type: DataTypes.BOOLEAN,
-       references: {
-         model: 'dogs',
-         key: 'id',
-       },
-     },
+      type: DataTypes.BOOLEAN,
+    },
+    user_id: {
+      type: DataTypes.INTEGER,
+      references: {
+        model: 'user',
+        key: 'id',
+      },
+    },
   },
   {
     sequelize,

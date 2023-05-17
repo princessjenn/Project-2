@@ -27,6 +27,81 @@ router.get('/', async (req, res) => {
   }
 });
 
+router.get('/home', async (req, res) => {
+  try {
+
+    // Pass serialized data and session flag into template
+    res.render('homepage', { 
+      logged_in: req.session.logged_in 
+    });
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
+router.get('/about', async (req, res) => {
+  try {
+
+    // Pass serialized data and session flag into template
+    res.render('about', { 
+      logged_in: req.session.logged_in 
+    });
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
+router.get('/adopt', async (req, res) => {
+  try {
+
+    // Pass serialized data and session flag into template
+    res.render('adopt', { 
+      logged_in: req.session.logged_in 
+    });
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
+router.get('/visit-us', async (req, res) => {
+  try {
+
+    // Pass serialized data and session flag into template
+    res.render('visit-us', { 
+      logged_in: req.session.logged_in 
+    });
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
+router.get('/contact', async (req, res) => {
+  try {
+
+    // Pass serialized data and session flag into template
+    res.render('contact', { 
+      logged_in: req.session.logged_in 
+    });
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
+router.get('/sign-up', async (req, res) => {
+  try {
+
+    // Pass serialized data and session flag into template
+    res.render('sign-up', { 
+      logged_in: req.session.logged_in 
+    });
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
+
+
+
 router.get('/project/:id', async (req, res) => {
   try {
     const projectData = await Project.findByPk(req.params.id, {
