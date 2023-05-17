@@ -7,7 +7,7 @@
     "sex": "Male",
     "vaccinations": "Up to date",
     "date_arrived": "2023-04-20",
-    "spay_neuter": true,
+    "spay_neuter_status": true,
     "description": "Buddy is a friendly and playful Labrador Retriever who loves outdoor activities and enjoys fetching balls."
 
   },
@@ -19,7 +19,7 @@
     "sex": "Female",
     "vaccinations": "Incomplete",
     "date_arrived": "2023-05-05",
-    "spay_neuter": true,
+    "spay_neuter_status": true,
     "description":"Luna is an intelligent and loyal German Shepherd who is always alert and protective of her loved ones."
 
   },
@@ -31,7 +31,7 @@
     "sex": "Male",
     "vaccinations": "Up to date",
     "date_arrived": "2023-05-09",
-    "spay_neuter": false,
+    "spay_neuter_status": false,
     "description":"Max is a calm and gentle Golden Retriever who enjoys leisurely walks and snuggling up for cuddles."
 
   },
@@ -43,7 +43,7 @@
     "sex": "Female",
     "vaccinations": "Up to date",
     "date_arrived": "2023-05-12",
-    "spay_neuter": true,
+    "spay_neuter_status": true,
     "description": "Bella is an energetic and intelligent Poodle who loves learning new tricks and enjoys being the center of attention."
   },
   {
@@ -54,7 +54,7 @@
     "sex": "Male",
     "vaccinations": "Up to date",
     "date_arrived": "2023-04-29",
-    "spay_neuter": true,
+    "spay_neuter_status": true,
     "description": "Rocky is a strong and confident Boxer who is always up for a good adventure and is known for his goofy antics."
 
   },
@@ -66,7 +66,7 @@
     "sex": "Male",
     "vaccinations": "Up to date",
     "date_arrived": "2023-03-29",
-    "spay_neuter": true,
+    "spay_neuter_status": true,
     "description": "Kevin is an adorable and spirited Chihuahua who may be small in size but has a big personality and is full of energy."
     
   },
@@ -78,7 +78,7 @@
     "sex": "Female",
     "vaccinations": "Incomplete",
     "date_arrived": "2023-04-24",
-    "spay_neuter": true,
+    "spay_neuter_status": true,
     "description": "Missy is a sweet and affectionate Pit-Mix who loves being around people and enjoys long walks and belly rubs."
 
   },
@@ -90,7 +90,7 @@
     "sex": "Male",
     "vaccinations": "Up to date",
     "date_arrived": "2022-11-20",
-    "spay_neuter": true,
+    "spay_neuter_status": true,
     "description": "Clarence is a friendly and sociable Pomeranian-Mix who is always ready to make new friends and loves being pampered."
 
   },
@@ -102,7 +102,7 @@
     "sex": "Female",
     "vaccinations": "Up to date",
     "date_arrived": "2023-03-12",
-    "spay_neuter":true,
+    "spay_neuter_status":true,
     "description": "Maisy is an intelligent and playful Corgi who is known for her adorable wiggle and happy-go-lucky personality."
   },
   {
@@ -113,7 +113,7 @@
     "sex": "Male",
     "vaccinations": "Up to date",
     "date_arrived": "2022-12-05",
-    "spay_neuter": true,
+    "spay_neuter_status": true,
     "description": "Buzz is an outgoing and loyal Pit-Mix who is highly energetic and loves going on adventures and exploring new places."
 
   }

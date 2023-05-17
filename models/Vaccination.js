@@ -11,15 +11,7 @@ Vaccination.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    dog_id: {
-      type: DataTypes.INTEGER,
-      allowNull: false,
-      foreignKey: true,
-    },
     vaccine_name: {
-      type: DataTypes.STRING,
-    },
-    vaccine_date: {
       type: DataTypes.STRING,
     },
   },
