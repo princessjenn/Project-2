@@ -1,42 +1,120 @@
 [
   {
+    "status": "Available",
     "name": "Buddy",
     "breed": "Labrador Retriever",
-    "age": "3",
+    "age": 3,
     "sex": "Male",
     "vaccinations": "Up to date",
-    "date_arrived": "2022-08-10"
+    "date_arrived": "2023-04-20",
+    "spay_neuter": true,
+    "description": "Buddy is a friendly and playful Labrador Retriever who loves outdoor activities and enjoys fetching balls."
+
   },
   {
+    "status": "Unavaiable - Needs Vaccine",
     "name": "Luna",
     "breed": "German Shepherd",
-    "age": "2",
+    "age": 2,
     "sex": "Female",
     "vaccinations": "Incomplete",
-    "date_arrived": "2023-01-05"
+    "date_arrived": "2023-05-05",
+    "spay_neuter": true,
+    "description":"Luna is an intelligent and loyal German Shepherd who is always alert and protective of her loved ones."
+
   },
   {
+    "status": "Available",
     "name": "Max",
     "breed": "Golden Retriever",
-    "age": "5",
+    "age": 5,
     "sex": "Male",
     "vaccinations": "Up to date",
-    "date_arrived": "2022-11-20"
+    "date_arrived": "2023-05-09",
+    "spay_neuter": false,
+    "description":"Max is a calm and gentle Golden Retriever who enjoys leisurely walks and snuggling up for cuddles."
+
   },
   {
+    "status": "Available",
     "name": "Bella",
     "breed": "Poodle",
-    "age": "4",
+    "age": 4,
     "sex": "Female",
     "vaccinations": "Up to date",
-    "date_arrived": "2023-03-12"
+    "date_arrived": "2023-05-12",
+    "spay_neuter": true,
+    "description": "Bella is an energetic and intelligent Poodle who loves learning new tricks and enjoys being the center of attention."
   },
   {
+    "status": "Available",
     "name": "Rocky",
     "breed": "Boxer",
-    "age": "6",
+    "age": 6,
     "sex": "Male",
     "vaccinations": "Up to date",
-    "date_arrived": "2022-12-05"
+    "date_arrived": "2023-04-29",
+    "spay_neuter": true,
+    "description": "Rocky is a strong and confident Boxer who is always up for a good adventure and is known for his goofy antics."
+
+  },
+  {
+    "status": "Available",
+    "name": "Kevin",
+    "breed": "Chihuahua",
+    "age": 1,
+    "sex": "Male",
+    "vaccinations": "Up to date",
+    "date_arrived": "2023-03-29",
+    "spay_neuter": true,
+    "description": "Kevin is an adorable and spirited Chihuahua who may be small in size but has a big personality and is full of energy."
+    
+  },
+  {
+    "status": "Unavaiable - Needs Vaccine",
+    "name": "Missy",
+    "breed": "Pit-Mix",
+    "age": 2,
+    "sex": "Female",
+    "vaccinations": "Incomplete",
+    "date_arrived": "2023-04-24",
+    "spay_neuter": true,
+    "description": "Missy is a sweet and affectionate Pit-Mix who loves being around people and enjoys long walks and belly rubs."
+
+  },
+  {
+    "status": "Available",
+    "name": "Clarence",
+    "breed": "Pomeranian-Mix",
+    "age": 5,
+    "sex": "Male",
+    "vaccinations": "Up to date",
+    "date_arrived": "2022-11-20",
+    "spay_neuter": true,
+    "description": "Clarence is a friendly and sociable Pomeranian-Mix who is always ready to make new friends and loves being pampered."
+
+  },
+  {
+    "status": "Available",
+    "name": "Maisy",
+    "breed": "Corgi",
+    "age": 2,
+    "sex": "Female",
+    "vaccinations": "Up to date",
+    "date_arrived": "2023-03-12",
+    "spay_neuter":true,
+    "description": "Maisy is an intelligent and playful Corgi who is known for her adorable wiggle and happy-go-lucky personality."
+  },
+  {
+    "status": "Available",
+    "name": "Buzz",
+    "breed": "Pit-Mix",
+    "age": 6,
+    "sex": "Male",
+    "vaccinations": "Up to date",
+    "date_arrived": "2022-12-05",
+    "spay_neuter": true,
+    "description": "Buzz is an outgoing and loyal Pit-Mix who is highly energetic and loves going on adventures and exploring new places."
+
   }
 ]

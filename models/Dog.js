@@ -11,6 +11,10 @@ Dog.init(
       primaryKey: true,
       autoIncrement: true,
     },
+    status: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
     name: {
       type: DataTypes.STRING,
       allowNull: false,
@@ -34,12 +38,9 @@ Dog.init(
     spay_neuter: {
       type: DataTypes.BOOLEAN,
     },
-    user_id: {
-      type: DataTypes.INTEGER,
-      references: {
-        model: 'user',
-        key: 'id',
-      },
+    description: {
+      type: DataTypes.STRING,
+      allowNull: false
     },
   },
   {
