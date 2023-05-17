@@ -1,42 +1,8 @@
 [
     {
-      "dog_id": 1,
       "spay_neuter_status": true
     },
     {
-      "dog_id": 2,
-      "spay_neuter_status": true
-    },
-    {
-        "dog_id": 3,
-        "spay_neuter_status": false
-    },
-    {
-        "dog_id": 4,
-        "spay_neuter_status": true
-    },
-    {
-        "dog_id": 5,
-        "spay_neuter_status": true
-    },
-    {
-        "dog_id": 6,
-        "spay_neuter_status": true
-    },
-    {
-        "dog_id": 7,
-        "spay_neuter_status": true
-    },
-    {
-        "dog_id": 8,
-        "spay_neuter_status": true
-    },
-    {
-        "dog_id": 9,
-        "spay_neuter_status": true
-    },
-    {
-        "dog_id": 10,
-        "spay_neuter_status": true
+      "spay_neuter_status": false
     }
-  ]
+]
