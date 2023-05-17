@@ -18,6 +18,8 @@ router.get('/', async (req, res) => {
     const dogs = dogData.map((dog) => dog.get({ plain: true }));
 
     // Pass serialized data and session flag into template
+
+    console.log(req.session)
     res.render('homepage', { 
       dogs, 
       logged_in: req.session.logged_in 
@@ -92,6 +94,18 @@ router.get('/sign-up', async (req, res) => {
 
     // Pass serialized data and session flag into template
     res.render('sign-up', { 
+      logged_in: req.session.logged_in 
+    });
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
+router.get('/newdogs', async (req, res) => {
+  try {
+
+    // Pass serialized data and session flag into template
+    res.render('newdogs', { 
       logged_in: req.session.logged_in 
     });
   } catch (err) {
