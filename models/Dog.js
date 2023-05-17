@@ -28,7 +28,7 @@ Dog.init(
     sex: {
       type: DataTypes.STRING,
     },
-    vaccinations: {
+    vaccination: {
       type: DataTypes.STRING,
     },
     date_arrived: {
