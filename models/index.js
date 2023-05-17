@@ -1,10 +1,7 @@
 const User = require('./User');
 const Dog = require('./Dog');
 const Adoption = require('./Adoption')
-
-
-
-
+const Vaccination = require('./Vaccination')
 
 //Dog Associations
 Dog.belongsTo(User, {
@@ -45,8 +42,6 @@ Adoption.belongsTo(User, {
 Vaccination.belongsTo(Dog, {
   foreignKey: 'dog_id'
 });
-
-
 
 
 
