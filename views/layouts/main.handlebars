@@ -101,10 +101,20 @@
             <div class='hidden sm:ml-6 sm:block'>
               <div class='flex space-x-4'>
                 <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-                <a
-                  href='login'
-                  class='text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-base font-medium'
-                >Log In</a>
+                {{#if logged_in}}
+                  {{! <button class="no-button" id="logout">logout</button> }}
+                  <a
+                    href='/'
+                    class='text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-base font-medium'
+                    id='logout'
+                  >Log Out</a>
+                  <script src='/js/logout.js'></script>
+                {{else}}
+                  <a
+                    href='login'
+                    class='text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-base font-medium'
+                  >Log In</a>
+                {{/if}}
               </div>
             </div>
           </div>
@@ -129,7 +139,7 @@
             class='text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium'
           >Adopt</a>
           <a
-            href='visit us'
+            href='visit-us'
             class='text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium'
           >Visit Us</a>
           <a
@@ -138,35 +148,11 @@
           >Contact</a>
         </div>
       </div>
-      {{#if logged_in}}
-      <button class="no-button" id="logout">logout</button>
-        <script src='/js/logout.js'></script>
-        {{else}}
-        <a href="/login">login</a>
-      {{/if}}
-      <script src='/js/testing.js'></script>
     </nav>
 
     <main>
       {{{body}}}
     </main>
-
-    <div class="flex-column justify-space-around">
-    <header class="display-flex justify-space-between align-center p-2">
-      <h1>
-        <a href="/">Fund My Project!</a>
-      </h1>
-      <nav>
-        <!-- Conditionally render login or logout links -->
-        {{#if logged_in}}
-        <a href="/profile">profile</a> |
-        <button class="no-button" id="logout">logout</button>
-        {{else}}
-        <a href="/login">login</a>
-        {{/if}}
-      </nav>
-    </header>
-  </div>
 
   </body>
 
