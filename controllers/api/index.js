@@ -5,7 +5,7 @@ const contactRoutes = require('./contactRoutes');
 const visitRoutes = require('./visitRoutes');
 
 router.use('/users', userRoutes);
-router.use('/dogs', dogRoutes);
+router.use('/adopt', dogRoutes);
 router.use('/contact', contactRoutes);
 router.use('/visit', visitRoutes);
 
