@@ -1,5 +1,5 @@
 // script.js
-document.getElementById('petForm').addEventListener('submit', function(event) {
+document.getElementById('petForm').addEventListener('submit', function (event) {
     event.preventDefault();
 
     // Retrieve form data
@@ -28,3 +28,4 @@ document.getElementById('petForm').addEventListener('submit', function(event) {
         spayedNeutered: spayedNeutered
     }
 })
+
