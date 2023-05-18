@@ -15,6 +15,7 @@ document.getElementById('petForm').addEventListener('submit', function (event) {
 
     // Create data object with form values
     var data = {
+        id: parseInt(id),
         name: name,
         status: availability,
         breed: breed,
