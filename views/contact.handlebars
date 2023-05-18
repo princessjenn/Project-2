@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
-  <title>Contact Form</title>
+<meta charset="UTF-8">
+<title>Contact Form</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
+<script src="/contactRoutes.js"></script>
   
-  <style>
+<style>
     /* CSS for vertical layout */
     form {
       display: flex;
@@ -34,21 +36,14 @@
 
   <h1>Contact Form</h1>
 
-  <form action="/submit-contact" method="POST">
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="name" required>
-
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required>
-
-    <label for="phone">Phone Number:</label>
-    <input type="tel" id="phone" name="phone" required>
-
-    <label for="message">Message:</label>
-    <textarea id="message" name="message" required></textarea>
-
-    <button type="submit">Submit</button>
-  </form>
+<form id="contactForm" action="/contact/submit-form" method="POST">
+  <input type="text" name="name" placeholder="Your Name">
+  <input type="email" name="email" placeholder="Your Email">
+  <input type="tel" name="phone" placeholder="Your Phone Number">
+  <textarea name="message" placeholder="Your Message"></textarea>
+  
+  <button type="submit">Submit</button>
+</form>
 
 </body>
 </html>
