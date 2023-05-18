@@ -31,7 +31,7 @@ document.getElementById('petForm').addEventListener('submit', function (event) {
     // adds new dog
 
     // Send a POST request to the API endpoint
-    fetch('/api/dogs', {
+    fetch('/api/adopt', {
         method: 'POST',
         body: JSON.stringify(data),
         headers: { 'Content-Type': 'application/json' },
