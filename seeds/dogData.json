@@ -1,5 +1,6 @@
 [
   {
+    "id": 1,
     "status": "Available",
     "name": "Buddy",
     "breed": "Labrador Retriever",
@@ -12,6 +13,7 @@
 
   },
   {
+    "id": 2,
     "status": "Unavaiable - Needs Vaccine",
     "name": "Luna",
     "breed": "German Shepherd",
@@ -24,6 +26,7 @@
 
   },
   {
+    "id": 3,
     "status": "Available",
     "name": "Max",
     "breed": "Golden Retriever",
@@ -36,6 +39,7 @@
 
   },
   {
+    "id": 4,
     "status": "Available",
     "name": "Bella",
     "breed": "Poodle",
@@ -47,6 +51,7 @@
     "description": "Bella is an energetic and intelligent Poodle who loves learning new tricks and enjoys being the center of attention."
   },
   {
+    "id": 5,
     "status": "Available",
     "name": "Rocky",
     "breed": "Boxer",
@@ -59,6 +64,7 @@
 
   },
   {
+    "id": 6,
     "status": "Available",
     "name": "Kevin",
     "breed": "Chihuahua",
@@ -71,6 +77,7 @@
     
   },
   {
+    "id": 7,
     "status": "Unavaiable - Needs Vaccine",
     "name": "Missy",
     "breed": "Pit-Mix",
@@ -83,6 +90,7 @@
 
   },
   {
+    "id": 8,
     "status": "Available",
     "name": "Clarence",
     "breed": "Pomeranian-Mix",
@@ -95,6 +103,7 @@
 
   },
   {
+    "id": 9,
     "status": "Available",
     "name": "Maisy",
     "breed": "Corgi",
@@ -106,6 +115,7 @@
     "description": "Maisy is an intelligent and playful Corgi who is known for her adorable wiggle and happy-go-lucky personality."
   },
   {
+    "id": 10,
     "status": "Available",
     "name": "Buzz",
     "breed": "Pit-Mix",
