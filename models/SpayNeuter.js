@@ -11,11 +11,6 @@ SpayNeuter.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    dog_id: {
-      type: DataTypes.INTEGER,
-      allowNull: false,
-      foreignKey: true,
-    },
     spay_neuter_status: {
       type: DataTypes.BOOLEAN,
     },

@@ -1,16 +1,11 @@
 const User = require('./User');
 const Dog = require('./Dog');
-const Adoption = require('./Adoption')
 const Vaccination = require('./Vaccination');
 const SpayNeuter = require('./SpayNeuter');
 
 //Dog Associations
 Dog.belongsTo(User, {
   foreignKey: 'user_id'
-});
-
-Dog.hasMany(Adoption, {
-  foreignKey: 'dog_id'
 });
 
 Dog.hasMany(Vaccination, {
@@ -28,20 +23,6 @@ User.hasMany(Dog, {
   onDelete: 'CASCADE'
 });
 
-User.hasMany(Adoption, {
-  foreignKey: 'user_id'
-});
-
-
-//Adoption associations
-Adoption.belongsTo(Dog, {
-  foreignKey: 'dog_id'
-});
-
-Adoption.belongsTo(User, {
-  foreignKey: 'user_id'
-});
-
 
 //Vaccination associations
 Vaccination.belongsTo(Dog, {
@@ -56,4 +37,4 @@ SpayNeuter.belongsTo(Dog, {
 
 
 
-module.exports = { User, Dog, Adoption, Vaccination };
+module.exports = { User, Dog, Vaccination, SpayNeuter };

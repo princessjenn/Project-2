@@ -6,12 +6,6 @@ router.get('/', async (req, res) => {
   try {
     // Get all projects and JOIN with user data
     const dogData = await Dog.findAll({
-      include: [
-        {
-          model: User,
-          attributes: ['name'],
-        },
-      ],
     });
 
     // Serialize data so the template can read it
@@ -55,9 +49,18 @@ router.get('/about', async (req, res) => {
 
 router.get('/adopt', async (req, res) => {
   try {
+    // Get all projects and JOIN with user data
+    const dogData = await Dog.findAll({
+    });
+
+    // Serialize data so the template can read it
+    const dogs = dogData.map((dog) => dog.get({ plain: true }));
 
     // Pass serialized data and session flag into template
+
+    console.log(req.session)
     res.render('adopt', { 
+      dogs, 
       logged_in: req.session.logged_in 
     });
   } catch (err) {

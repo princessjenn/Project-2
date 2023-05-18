@@ -35,7 +35,7 @@ Dog.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    spay_neuter: {
+    spay_neuter_status: {
       type: DataTypes.BOOLEAN,
     },
     description: {
