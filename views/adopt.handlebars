@@ -1,10 +1,18 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Pet Information</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
-</head>
-<body class="bg-gray-800 text-white">
+{{#each dogs as |dog|}}
+  <div class='row mb-4 project'>
+    <div class='col-md-5'>
+      <h2>
+        <a href='/dog/{{dog.id}}'>{{dog.name}}</a>
+      </h2>
+    </div>
+    <div class='col-md-7'>
+      <p>
+        {{dog.description}}
+      </p>
+    </div>
+  </div>
+{{/each}}
+{{#if logged_in}}
     <h1>Enter Pet Information</h1>
     <form id="petForm" class = "adoptForm">
         <label for="name">Name:</label>
@@ -42,8 +50,5 @@
 
         <button type="submit">Submit</button>
     </form>
-
     <script src="./js/newdog.js"></script>
-</body>
-
-</html>
+ {{/if}}
