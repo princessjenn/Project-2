@@ -13,29 +13,28 @@ document.getElementById('petForm').addEventListener('submit', function (event) {
     var spayedNeutered = document.getElementById('spayedNeutered').checked;
     var description = document.getElementById('description').value;
 
-    // Compile Handlebars template
-    var template = Handlebars.compile(document.getElementById('pet-template').innerHTML);
-
     // Create data object with form values
     var data = {
         name: name,
-        availability: availability,
+        status: availability,
         breed: breed,
-        age: age,
+        age: parseInt(age),
         sex: sex,
         vaccination: vaccination,
-        arrivalDate: arrivalDate,
-        spayedNeutered: spayedNeutered
+        date_arrived: arrivalDate,
+        spay_neuter_status: spayedNeutered,
+        description: description
     }
 
     // adds new dog
 
     // Send a POST request to the API endpoint
-    fetch('/api/dogs', {
+    fetch('/api/adopt/', {
         method: 'POST',
         body: JSON.stringify(data),
         headers: { 'Content-Type': 'application/json' },
     }).then(response => {
+        console.log(response);
         return response.json();
     }).then(data => {
         console.log(data);
