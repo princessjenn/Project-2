@@ -22,3 +22,16 @@ header, .project:not(:last-child) {
   font-weight: bold;
   margin-left: -5px;
 }
+
+.adoptForm{
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  justify-content: center;
+  width: 60%;
+}
+
+.adoptForm input, .adoptForm select{
+  padding: 10px;
+  border-radius: 8px;
+}

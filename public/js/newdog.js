@@ -1,5 +1,5 @@
 // script.js
-document.getElementById('petForm').addEventListener('submit', function(event) {
+document.getElementById('petForm').addEventListener('submit', function (event) {
     event.preventDefault();
 
     // Retrieve form data
@@ -27,4 +27,18 @@ document.getElementById('petForm').addEventListener('submit', function(event) {
         arrivalDate: arrivalDate,
         spayedNeutered: spayedNeutered
     }
+
+    // adds new dog
+
+    // Send a POST request to the API endpoint
+    fetch('/api/dogs', {
+        method: 'POST',
+        body: JSON.stringify(data),
+        headers: { 'Content-Type': 'application/json' },
+    }).then(response => {
+        return response.json();
+    }).then(data => {
+        console.log(data);
+    })
 })
+
