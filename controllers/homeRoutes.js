@@ -13,7 +13,7 @@ router.get('/', async (req, res) => {
     res.status(500).json(err);
   }
 });
-
+//OR
 router.get('/home', async (req, res) => {
   try {
 
@@ -26,6 +26,8 @@ router.get('/home', async (req, res) => {
   }
 });
 
+
+//Get 'About' endpoint from homepage
 router.get('/about', async (req, res) => {
   try {
 
@@ -38,16 +40,13 @@ router.get('/about', async (req, res) => {
   }
 });
 
+
+//Get ALL Dogs from homepage to Adopt endpoint
 router.get('/adopt', async (req, res) => {
   try {
-    // Get all projects and JOIN with user data
     const dogData = await Dog.findAll({
     });
-
-    // Serialize data so the template can read it
     const dogs = dogData.map((dog) => dog.get({ plain: true }));
-
-    // Pass serialized data and session flag into template
 
     console.log(req.session)
     res.render('adopt', { 
@@ -59,10 +58,25 @@ router.get('/adopt', async (req, res) => {
   }
 });
 
+//Get ONE Dog by ID
+router.get('/adopt/:id', async (req, res) => {
+  try {
+    const dogData = await Dog.findByPk(req.params.id);
+
+    const dogs = dogData.map((dog) => dog.get({ plain: true }));
+  
+    res.render('dog', { dogs, loggedIn: req.session.loggedIn });
+  } catch (err) {
+    console.log(err);
+    res.status(500).json(err);
+  }
+});
+
+
+
+//Get 'Vist Us' from homepage
 router.get('/visit-us', async (req, res) => {
   try {
-
-    // Pass serialized data and session flag into template
     res.render('visit-us', { 
       logged_in: req.session.logged_in 
     });
@@ -71,10 +85,11 @@ router.get('/visit-us', async (req, res) => {
   }
 });
 
+
+
+//Get 'Contact' from homepage
 router.get('/contact', async (req, res) => {
   try {
-
-    // Pass serialized data and session flag into template
     res.render('contact', { 
       logged_in: req.session.logged_in 
     });
@@ -83,20 +98,7 @@ router.get('/contact', async (req, res) => {
   }
 });
 
-
-router.get('/newdogs', async (req, res) => {
-  try {
-
-    // Pass serialized data and session flag into template
-    res.render('newdogs', { 
-      logged_in: req.session.logged_in 
-    });
-  } catch (err) {
-    res.status(500).json(err);
-  }
-});
-
-
+//Get 'Log In' endpoint from homepage
 router.get('/login', (req, res) => {
   // If the user is already logged in, redirect the request to another route
   if (req.session.logged_in) {
