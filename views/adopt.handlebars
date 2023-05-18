@@ -3,45 +3,47 @@
 <head>
     <title>Pet Information</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
-    <script src="/public/js/newdog.js"></script>
 </head>
-<body>
+<body class="bg-gray-800 text-white">
     <h1>Enter Pet Information</h1>
-    <form id="petForm">
+    <form id="petForm" class = "adoptForm">
         <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required><br>
+        <input type="text" id="name" name="name" required class = "bg-gray-400"><br>
 
         <label for="availability">Availability:</label>
-        <select id="availability" name="availability" required>
+        <select id="availability" name="availability" required class = "bg-gray-400">
             <option value="available">Available</option>
             <option value="unavailable">Unavailable</option>
         </select><br>
 
         <label for="breed">Breed:</label>
-        <input type="text" id="breed" name="breed" required><br>
+        <input type="text" id="breed" name="breed" required class = "bg-gray-400"><br>
 
         <label for="age">Age:</label>
-        <input type="number" id="age" name="age" required><br>
+        <input type="number" id="age" name="age" required class = "bg-gray-400"><br>
 
         <label for="sex">Sex:</label>
-        <select id="sex" name="sex" required>
+        <select id="sex" name="sex" required class = "bg-gray-400">
             <option value="male">Male</option>
             <option value="female">Female</option>
         </select><br>
 
         <label for="vaccination">Vaccination Status:</label>
-        <input type="text" id="vaccination" name="vaccination" required><br>
+        <input type="text" id="vaccination" name="vaccination" required class = "bg-gray-400"><br>
 
         <label for="arrivalDate">Arrival Date:</label>
-        <input type="date" id="arrivalDate" name="arrivalDate" required><br>
+        <input type="date" id="arrivalDate" name="arrivalDate" required class = "bg-gray-400"><br>
 
         <label for="spayedNeutered">Spayed/Neutered:</label>
-        <input type="checkbox" id="spayedNeutered" name="spayedNeutered"><br>
+        <input type="checkbox" id="spayedNeutered" name="spayedNeutered" class = "bg-gray-400"><br>
 
         <label for="description">Describe the dog:</label>
-        <input type="text" id="description" name="description"><br>
+        <input type="text" id="description" name="description" class = "bg-gray-400"><br>
 
         <button type="submit">Submit</button>
     </form>
+
+    <script src="./js/newdog.js"></script>
 </body>
+
 </html>
