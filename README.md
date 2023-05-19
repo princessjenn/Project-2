@@ -83,10 +83,6 @@ Finally, you can invoke the application to start!
 `node server.js`
 
 
-## Usage
-
-
-
 ## License [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 This project is licensed under the terms of the MIT license.
@@ -120,7 +116,12 @@ Our Personal Github Repositories:
 
 Jennifer:
 
+https://github.com/princessjenn
+
 Jason:
+
+https://github.com/J3yT
 
 Brian:
 
+https://github.com/Badgers93
