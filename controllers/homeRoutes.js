@@ -64,7 +64,7 @@ router.get('/adopt/:id', async (req, res) => {
     const dogData = await Dog.findByPk(req.params.id);
     const dog = dogData.get ({  plain: true });
     
-res.render('adopt-details', { dog, loggedIn: req.session.loggedIn });
+    res.render('adopt-details', { dog, loggedIn: req.session.loggedIn });
   } catch (err) {
     console.log(err);
     res.status(500).json(err);

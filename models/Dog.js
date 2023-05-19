@@ -42,6 +42,10 @@ Dog.init(
       type: DataTypes.STRING,
       allowNull: false
     },
+    imagePath: { //new column for image URL
+    type: DataTypes.STRING,
+    allowNull: false
+    },
   },
   {
     sequelize,
