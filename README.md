@@ -116,3 +116,11 @@ First thing we needed to test before building the rest of our application was ma
 
 ## Questions
 
+Our Personal Github Repositories:
+
+Jennifer:
+
+Jason:
+
+Brian:
+
