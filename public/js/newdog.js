@@ -35,9 +35,31 @@ document.getElementById('petForm').addEventListener('submit', function (event) {
         headers: { 'Content-Type': 'application/json' },
     }).then(response => {
         console.log(response);
+        document.location.replace('/adopt');
         return response.json();
     }).then(data => {
         console.log(data);
     })
 })
+
+// removing dog
+document.querySelector('body').addEventListener('click', async function(event) {
+    if(event.target.matches("#deleteDog")){
+    if (event.target.hasAttribute('data-id')) {
+        const id = event.target.getAttribute('data-id');
+    
+        const response = await fetch(`/api/adopt/${id}`, {
+          method: 'DELETE',
+        });
+    
+        if (response.ok) {
+          console.log(response);
+          document.location.replace('/adopt');
+        } else {
+          alert('Failed to delete dog');
+        }
+      }
+    }
+})
+
 
