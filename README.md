@@ -96,7 +96,7 @@ This project is licensed under the terms of the MIT license.
 
 To contribute to the project: 
 
-1. start by forking the repository and creating a new branch specifically for your new feature or bug fix.
+1. Start by forking the repository and creating a new branch specifically for your new feature or bug fix.
 2. It's important to adhere to the project's coding standards and properly format your code.
 3. When committing changes, be sure to write clear and concise messages that describe the changes made.
 4. If your contribution affects the user interface or experience, include screenshots or animated GIFs in your pull request to help reviewers understand the changes. 
