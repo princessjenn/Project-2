@@ -54,8 +54,37 @@ THEN I am presented with the dog’s information and records status.
 
 ## Installation
 
+Here are the steps to set up a port to view the server where the application will run!
+
+Firstly, install dependencies (i.e. node.js, express.js, MySQL, Sequelize, nodemon):
+
+`npm install`
+
+Run database inside shell:
+
+`mysql -u root -p`
+
+Then, enter MySQL password.
+
+Next, grab your database from your schema.sql:
+
+`source db/schema.sql`
+
+Exit shell:
+
+`exit`
+
+In terminal, run seeds inside database:
+
+`npm run seed`
+
+Finally, you can invoke the application to start!
+
+`node server.js`
+
 
 ## Usage
+
 
 
 ## License [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
