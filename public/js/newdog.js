@@ -44,8 +44,9 @@ document.getElementById('petForm').addEventListener('submit', function (event) {
 })
 
 // removing dog
-document.querySelector('body').addEventListener('click', async function(event) {
-    if(event.target.matches("#deleteDog")){
+document.querySelector('#dogContainer').addEventListener('click', async function(event) {
+    console.log("hello world", event.target);
+    if(event.target.matches(".deleteDog")){
     if (event.target.hasAttribute('data-id')) {
         const id = event.target.getAttribute('data-id');
     
